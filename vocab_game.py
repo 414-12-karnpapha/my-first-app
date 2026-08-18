@@ -96,10 +96,11 @@ ans2 = st.text_input(
 ans3 = st.text_input(
     "ข้อ 3: An `or_ _g _` a day keeps the doctor away. 🍊",
     value=st.session_state.ans3_val,
- )
+)
 ans4 = st.text_input(
     "ข้อ 4: An `Wa_er_elon |` a day keeps the doctor away. 🍉",
     value=st.session_state.ans4_val,
+)
    
 
 # อัปเดตค่าล่าสุดเข้าตัวแปร
