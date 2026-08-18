@@ -58,7 +58,7 @@ def show_result_dialog(ans1, ans2):
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans4 == " watermelon":
+    if u_ans4 == "watermelon":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -131,7 +131,8 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
-    def show_result_dialog(ans1, ans2, ans3, ans4):
+   if st.session_state.get("is_ended", False):
+    show_result_dialog(ans1,ans2,ans3,ans4)
 
 st.divider()
 st.write("นางสาวกานต์ปภา เฮ้าวัน เลขที่ 12 ม.4/14")
