@@ -137,4 +137,6 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1,ans2,ans3,ans4)
 
 st.divider()
-st.write("นางสาวกานต์ปภา เฮ้าวัน เลขที่ 12 ม.4/14")
+st.write("นางสาวกานต์ปภา เฮ้าวัน เลขที่ 12 ม.4/14 ")
+st.write("นางสาวสุทธภา ภูมิมาลา เลขที่ 28 ม.4/14 ")
+st.write("นางสาวปราณรักษ์ เมืองมูล เลขที่ 2 ม.4/14 ")
