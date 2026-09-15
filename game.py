@@ -72,7 +72,8 @@ def show_result_dialog(ans1, ans2,ans3,ans4):
     if score == 4:
         st.success("👑 จักรพรรดิแห่งตลาดจีน")
     else:
-        st.error("📜 ผู้ฝึกวิชาภาษาจีน")
+        st.error("ระดับ:📜 ผู้ฝึกวิชาภาษาจีน
+        ตอบถูกทุกข้อคุณเก่งภาษาจีนมาก!")
 
 
 # ----------------------------------------------------
@@ -94,19 +95,19 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: 我想买包子 ",
+    "ลูกค้าต้องการอะไร?: 我想买包子 ",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: 我要喝奶茶",
+    "ลูกค้าต้องการอะไร?: 我要喝奶茶",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: 我想吃饺子。",
+    "ลูกค้าต้องการอะไร?: 我想吃饺子。",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4:我想吃面条。",
+    "ลูกค้าต้องการอะไร?:我想吃面条。",
     value=st.session_state.ans4_val,
 )
    
@@ -122,7 +123,7 @@ st.session_state.ans4_val = ans4
 
 # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    if st.button("📥 ส่งคำตอบ"):
+    if st.button("⏰ ส่งคำตอบ"):
         st.session_state.is_ended = True
         st.rerun()
 
