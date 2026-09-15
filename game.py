@@ -73,7 +73,8 @@ def show_result_dialog(ans1, ans2,ans3,ans4):
         st.success("👑 จักรพรรดิแห่งตลาดจีน คุณเก่งภาษาจีนมาก!")
     if score == 3:
         st.success("🏮 พ่อค้าตลาดจีนทำได้ดี แต่ต้องฝึกคำศัพท์เพิ่ม")
-    else: st.error("ระดับ:📜 ผู้ฝึกวิชาภาษาจีน")
+    else: 
+        st.error("ระดับ:📜 ผู้ฝึกวิชาภาษาจีน")
 
 
 # ----------------------------------------------------
@@ -83,7 +84,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(30 - (time.time() - st.session_state.start))
+    time_left = int(40 - (time.time() - st.session_state.start))
 
     if time_left > 0:
         st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
