@@ -71,6 +71,8 @@ def show_result_dialog(ans1, ans2,ans3,ans4):
 
     if score == 4:
         st.success("👑 จักรพรรดิแห่งตลาดจีน คุณเก่งภาษาจีนมาก!")
+        st.success("🐉 จอมยุทธ์ฝึกหัดฝีมือยอดเยี่ยม ผิดเพียงเล็กน้อย")
+    else if (score >= 2)
     else:
         st.error("ระดับ:📜 ผู้ฝึกวิชาภาษาจีน")
 
