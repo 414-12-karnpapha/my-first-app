@@ -1,7 +1,7 @@
 import time
 import streamlit as st
 
-st.title("⏱️ เกมเติมศัพท์จับเวลา")
+st.title("🏮ภารกิจตลาดจีน")
 
 # 1. กำหนดค่าเริ่มต้นใน session_state ถ้ายังไม่มี
 if "ans1_val" not in st.session_state:
@@ -27,7 +27,7 @@ def reset_game():
 # ----------------------------------------------------
 # 📌 ฟังก์ชัน MessageBox (Dialog)
 # ----------------------------------------------------
-@st.dialog("📊 สรุปผลการเล่นเกม")
+@st.dialog("🐉เกมจบแล้ว!")
 def show_result_dialog(ans1, ans2,ans3,ans4):
     st.balloons()
     score = 0
@@ -70,9 +70,10 @@ def show_result_dialog(ans1, ans2,ans3,ans4):
     st.info(f"🏆 ได้คะแนนรวม: {score} คะแนน")
 
     if score == 4:
-        st.success("🎉 You win!")
+        st.success("👑 จักรพรรดิแห่งตลาดจีน")
     else:
-        st.error("💀 You lose!")
+        st.error("📜 ผู้ฝึกวิชาภาษาจีน
+ลองศึกษาและกลับมาเล่นใหม่")
 
 
 # ----------------------------------------------------
